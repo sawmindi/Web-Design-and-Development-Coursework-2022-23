@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.header{
+min-height: 100vh;
+  width: 100%;
+  background-image: url(../svg/back1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header .wave{
+position: absolute;
+bottom: 0; left: 0;
+width: 100%;
+height: 12rem;
+}
+
+.main{
+  width: 90%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.main h1{
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke :1px  #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(15, 68, 50);
+
+}
+
+.main p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #0b2c24;
+}
+
+
+ /* ------------------------- SVG ----------------------------*/
+
+ .Diagram{
+  background-color: black;
+}
+
+#svg g:hover text {
+  letter-spacing: 3px;
+  font-weight: bold;
+
+}
+
+#svg #presentation:hover rect,
+#svg #mainpage:hover rect,
+#svg #quiz:hover rect,
+#svg #sitemap:hover rect{
+  fill: #182a1d;
+}
+
+
+#svg #products:hover rect,
+#svg #form:hover rect,
+#svg #details:hover rect,
+#svg #thambnail:hover rect{
+  fill: #000000;
+}
+
