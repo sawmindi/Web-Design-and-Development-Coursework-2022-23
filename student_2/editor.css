@@ -1,0 +1,47 @@
+
+
+/* 
+  ===============================================================
+                      editor page content
+  ===============================================================
+  */
+
+  body{
+  
+    background-color: rgb(61, 110, 94); 
+    text-align: center;
+    
+}
+#editor-Nathasha img {
+    margin: 30px;
+    margin-top: 5rem;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 3px 3px 20px white;
+  }
+  
+  #editor-Nathasha h1 {
+    min-height: 10vh;
+    font-size: 2.5rem;
+    color: white;
+  }
+  #editor-Nathasha h2 {
+    min-height: 10vh;
+    font-size: 2rem;
+    color: white;
+  }
+  .task-list{
+    font-size: 2rem;
+    left: 30px;
+    min-height: 10vh;
+    list-style: none;
+    list-style-position:initial;
+    color: white;
+    margin: 30px;
+    
+   
+    
+
+  }

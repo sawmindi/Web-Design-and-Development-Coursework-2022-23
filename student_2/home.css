@@ -1,0 +1,173 @@
+/* 
+=================================================================
+                        Extra Feautures
+=================================================================
+ */
+ html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+ 
+  /* 
+  ===============================================================
+                          Navigation image
+  ===============================================================
+   */
+
+  #nav-img {
+    
+    width: 170px;
+    float: left;
+  }
+  .text-box{
+    width:90%;
+    color:white;
+    position: absolute;
+    top:40%;
+    left:10%;
+    font-size: 30px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-box h5{
+   font-family:cursive;
+}
+  body{
+    background-color: black;
+    
+  }
+  
+
+  
+  /* 
+  ============================================================
+                          Trips-section
+  ============================================================
+  */
+  .topic h1 {
+    margin: 8rem auto;
+    font-family: "Roboto";
+    text-align:center;
+    font-size: 4rem;
+    color: rgb(253, 253, 253);
+  }
+  .trip-img {
+    object-fit: cover;
+    max-width: 100%;
+
+  }
+ 
+  .button{
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    color: black; 
+    position: relative;
+    overflow: hidden;
+    
+    left: 90px;
+    top: 30px;
+}
+
+.button::before{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+   left: 20%;
+   
+    z-index: -1;
+    transition: .3s linear;
+    left: 0;
+}
+
+.button:hover::before{
+    width: 100%;
+}
+
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+    gap: 0.5rem;
+  
+  }
+  
+  .card {
+    width: 250px;
+    height: 450px;
+    display: inline;
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    min-height: 15rem;
+    font-size: 3.5rem;
+    box-shadow: 5px 5px 10px rgb(90, 168, 90);
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  .cards a {
+      text-decoration: none;
+      color: white;
+    }
+    .cards a:hover{
+      text-decoration: none;
+      color:black;
+    }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  /* 
+==================================================================
+                        comment section
+==================================================================
+*/
+
+  
+.comment-form{
+  gap: 2rem;
+  border-radius: 2rem;
+  font-size: 4rem;
+  text-align:center;
+  max-width: 60ch;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid rgb(14, 81, 47);
+  margin: 8rem auto;
+  font-size: 2rem;
+  padding: 3%;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.comment-link a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:rgb(36, 34, 34);
+  background-color: rgb(216, 205, 116);
+  border: 2px solid orange;
+  margin: 1rem auto;
+  padding: 1rem 8rem;
+  border-radius: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.comment-link a:hover {
+  background-color: rgb(232, 158, 22);
+  color:black;
+}

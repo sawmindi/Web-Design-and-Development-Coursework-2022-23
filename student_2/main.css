@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+
+}
+
+.header{
+ 
+  background-position: center;
+  background-size: cover;
+ 
+}
+ /* 
+  ======================================================
+                       Navigation Bar
+  ======================================================
+  */
+
+  nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 100;
+    height: 110px;
+    background-color: black;
+
+
+  }
+  
+  .navimg{
+    display: center;
+    margin:0 auto;
+    transition: 15px;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+  
+  nav img {
+    max-width: 7rem;
+    min-height: 7rem;
+    object-fit: cover;
+  }
+  
+  nav img:hover {
+    filter: hue-rotate(30deg);
+  }
+  
+  .nav-elements {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .nav-elements a {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .nav-elements a:hover {
+    background-color: rgb(24, 117, 24);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-elements li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-elements li div {
+    margin-left: 2rem;
+  }
+  
+  
+ 
+  
+  /* 
+  =======================================================
+                      footer section
+  =======================================================
+  */
+  footer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(41, 77, 41);
+    color: white;
+    margin: 0;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  footer:hover {
+    background-color: rgb(96, 164, 96);
+  }
+   
+  footer p {
+    margin: 0;
+  }
+   footer a{
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+   }
+   footer a:hover {
+    background-color: rgb(197, 177, 89);
+    color: black;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,88 @@
+body{
+    background-color:rgb(154, 167, 154);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+form{
+    height: 1100px;
+    width: 600px;
+    margin: auto;
+}
+fieldset{
+    height: 150px;
+    width: 650px;
+    background-color:rgb(134, 158, 141);
+    margin :15px;
+    border-radius: 8px;
+
+}
+.rating1 {
+    
+    display:flex;
+    gap: 1rem;
+}
+.input input{
+    
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-size:15px;
+}
+/* 
+  ======================================================
+                       submit button
+  ======================================================
+  */
+.buttons{
+    justify-content: space-around;
+    display: flex;
+    margin-left: 30px;
+}
+
+.btn{
+   
+    font-weight: 200;
+    font-size: 15px;
+    outline: none;
+    padding: 10px 60px;
+    border: none;
+    background:rgb(53, 149, 66);
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn:hover{
+    background: rgb(86, 158, 86);
+}
+@media screen and(max-width:650px){
+    .input {width:100%;}
+    
+}
+/* 
+  ======================================================
+                       buttons
+  ======================================================
+  */
+
+.next{
+    margin: 10px;
+   
+}
+.next a{
+    font-weight: 200;
+    font-size: 15px;
+    outline: none;
+    padding: 10px 60px;
+    border: none;
+    color: black;
+    background:rgb(124, 86, 140);
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.next a:hover{
+    background: rgb(131, 111, 166);
+}

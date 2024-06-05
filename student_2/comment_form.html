@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../student_2/logo.jpeg" type="image/x-icon">
+    <title>comment form</title>
+    <link rel="stylesheet" href="../student_2/comment.css">
+    
+</head>
+<body>
+    <form id="comment form" action="MAILTO:nathasha.20221610@iit.ac.lk" method="post" enctype="text/plain">
+
+    <h1>How did we do?</h1> 
+    <fieldset>
+        <br>
+        <lable>Full Name:
+            <br>
+        <input type="text" name="First Name"  placeholder="first  name" required>
+        <br><br>
+        <input type="text" name="last Name"  placeholder="Last  name" required>
+        </lable>
+   
+    </fieldset>
+    <br>
+    <fieldset>
+        <br>
+        <lable for="email">Email address:</lable>
+        <br>
+        <input type="email" id="email" name="email" required>
+        
+    <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <br>
+        <lable>How statisfied were you with our website today?choose form 0 to 10.
+            where 0 is extremly dissatisfied and 10 is extremely statisfied
+            <br><br>
+            <div class="rating1">
+                <lable for="rate1">1</lable>
+            
+        
+                <lable for="rate2">2</lable>
+            
+                <lable for="rate3">3</lable>
+            
+                <lable for="rate4">4</lable>
+            
+                <lable for="rate5">5</lable>
+            
+                <lable for="rate6">6</lable>
+            
+                <lable for="rate7">7</lable>
+            
+                <lable for="rate8">8</lable>
+           
+                <lable for="rate9">9</lable>
+            
+                <lable for="rate10">10</lable>
+            </div>
+                
+        <div class="rating2" name="rate" required>
+            <input type="radio" name="rate" value="1" id="rate1">
+            <input type="radio" name="rate" value="2" id="rate2">
+            <input type="radio" name="rate" value="3" id="rate3">
+            <input type="radio" name="rate" value="4" id="rate4">
+            <input type="radio" name="rate" value="5" id="rate5">
+            <input type="radio" name="rate" value="6" id="rate6">
+            <input type="radio" name="rate" value="7" id="rate7">
+            <input type="radio" name="rate" value="8" id="rate8">
+            <input type="radio" name="rate"value="9" id="rate9">
+            <input type="radio" name="rate"value="10" id="rate10">
+        </div>
+    <br><br>
+    </fieldset>
+    
+    
+    <fieldset>
+        <br>
+        <lable for="c">How could you tell us resasons for giving this rating</lable>
+        <br><br>
+        <textarea name="resasonfor giving this rate" cols="80" rows="6"></textarea>
+            
+    <br><br>
+   </fieldset>
+  
+    <fieldset>
+        <br>
+       <lable for="complete to task method">How did you want to complete this task today?(optional)</lable>
+    <br><br>
+       <select name="complete to task method" id="a" required>
+            <option value="--Please select">---Please select---</option>
+            <option value="Phone">Phone</option>
+            <option value="Phone">Website</option>
+            <option value="Phone">Webchat</option>
+            <option value="Phone">Social Media</option>
+            <option value="Phone">Email</option>
+        </select>
+    <br><br>
+    </fieldset>
+  
+    <fieldset>
+        <br>
+        <lable for="again task method">If you had complete this task again, how would you prefer to do it(optional)</lable>
+    <br><br>
+        <select name="again task method" id="b" >
+            <option value="--Please select" >---Please select---</option>
+            <option value="Phone">Phone</option>
+            <option value="Phone">Website</option>
+            <option value="Phone">Webchat</option>
+            <option value="Phone">Social Media</option>
+            <option value="Phone">Email</option>
+    </select>
+   </fieldset>
+
+    </lable>
+    <br><br>
+
+    <div class="buttons">
+    
+      <div class="button" required >
+       
+        <button type="submit" class="btn" onclick="submitForm()"  > Submit</button>
+    
+        <br><br>
+        <div class="next">
+            <a href="../student_2/Home_page.html">Cancel</a>
+            <a href=" ../student_2/thankyou.html">Next</a>
+        
+        </div>
+        
+      </div>   
+
+    </div>
+    
+</section> 
+</form>
+
+</body>
+
+</html>
