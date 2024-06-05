@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../student_2/logo.jpeg" type="image/x-icon">
+    <title>Tourism Quiz</title>
+    
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Roboto:wght@100;300;400;500;700&display=swap'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../../student_3/Quiz/quiz.css">
+</head>
+
+    <body>
+ <!--Navigation bar-->
+        <nav>
+            <a href="../../student_2/Home_page.html">
+                <img src="../../student_2/resources/logo.png " alt="Site Logo" class="ct">
+            </a>
+
+            <ul class="nav-elements">
+                <li style="display: inline;"><a href="../../student_2/Home_page.html">Home</a></li>
+                <li style="display: inline;"><a href="Tourism_Quiz.html">Quiz</a></li>
+                <li style="display: inline;"><a href="../../student_2/comment_form.html">Comment</a></li>
+                <li style="display: inline;"><a href="../../student_1/addToCart/addToCart.html">Products</a></li>
+                <li style="display: inline;"><a href="../../student_4/SVG.html">Sitemap</a></li>
+                <li style="display: inline;"><a href="../Student Details/Details.html">About us</a></li>
+                    
+            </ul>
+        </nav>
+
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+                <div class="info-list">
+                    <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                    <div class="info">2. Once you select your answer, it can't be undone.</div>
+                    <div class="info">3. You can't select any option once time goes off.</div>
+                    <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                    <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                </div>
+                    <div class="buttons">
+                        <button class="quit">Exit Quiz</button>
+                        <button class="restart">Continue</button>
+                    </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Tourism Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+            </header>
+                <section>
+                    <div class="que_text">
+                    </div>
+                    <div class="option_list">
+                    </div>
+                </section>
+
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+                <!--page editior section-->
+                <div class="footer">
+
+                    <p>Copyright © SL TERVOULIIA 2023</p>
+                    &nbsp;&nbsp;<a href="../../student_3/Page_editor/page_editor.html">Editor-Sandali</a>
+                </div>
+                    
+        <script src="js/questions.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

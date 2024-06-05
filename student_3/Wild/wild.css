@@ -1,0 +1,446 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body,html{
+    overflow-x: hidden;
+    background: #000000;
+}
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent ;
+}
+html::-webkit-scrollbar-thumb{
+    background:whitesmoke;
+    border-radius: 5rem;
+}
+/*------navigation bar ------*/
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+    height: 110px;
+    background-color: black;
+}
+.nav img{
+    display: center;
+    margin:0 auto;
+    transition: 15px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+nav img {
+    max-width: 110px;
+    min-height: 110px;
+    object-fit: cover;
+}
+nav img:hover {
+    filter: hue-rotate(30deg);
+}
+.nav-elements {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-elements a {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+.nav-elements a:hover {
+    background-color: rgb(24, 117, 24);
+    color: white;
+    cursor: pointer;
+}
+.nav-elements li {
+    display: flex;
+    align-items: center;
+}
+.nav-elements li div {
+    margin-left: 2rem;
+} 
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../student_3/Wild/images/bg1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;    
+}
+.header-content h1{
+    font-size: 80px;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/*------categories ------*/
+
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    gap: 8px;
+}
+.category .box{
+    text-align: center;
+    padding: 16px;
+}
+.category .box img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom:16px ;
+}
+.category .box img:hover{
+    background: #eee;
+ }
+.category .box h3{
+    font-size: 32px;
+    color: green;
+}
+.category .box p{
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 0;
+    line-height: 2;
+    letter-spacing: 3px;
+}
+.btn{
+    margin-top: 16px;
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 35px;
+    border: 1.6px solid black;
+    border-radius: 50px;
+    background: #fff;
+    z-index: 1;
+    font-size: 24px;
+    padding: 16px 48px;
+}
+.circle{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: green;
+    border-radius: 50px;
+    left: 0;
+    top: -2px;
+    z-index: 2;
+    transition: .5s cubic-bezier(1,0,.8,1);
+}
+.btn:hover .circle{
+    width: 140px;
+}
+.arrow{
+    position: absolute;
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 3px solid #000;
+    border-right:3px solid #000;
+    transform: rotate(45deg);
+    top: 15px;
+    left: 11.25px;
+    transition: .5s;
+}
+.btn:hover .arrow{
+    left:23px
+}
+.arrow:before{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 1.05px;
+    background:#000 ;
+    transform: rotate(-45deg);
+    top: 3.75px;
+    left: -3px;
+    opacity: 0;
+    transition: .5s;
+}
+.btn:hover .arrow:before{
+    opacity: 1;
+}
+.text{
+    position: absolute;
+    top: -20px;
+    left: 35px;
+    font-size: 13px;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 282;
+    z-index: 2;
+    transition: .5s;
+}
+.btn:hover .text{
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+}
+.heading span{
+    color:green;
+    text-transform: uppercase;
+}
+
+/*------Forest section------*/
+.Forest{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../student_3/Wild/images/forest.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Forest.content{
+    max-width: 60rem;
+}
+.Forest .content h3{
+    font-size: 9rem;
+    margin: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(../../student_3/Wild/images/back.png);
+    -webkit-background-clip: text;
+}
+.Forest .content p{
+    padding: 0 8%;
+    font-family:'Roboto',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+ }
+ .container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .hexagon{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 50px 20px 70px;
+}
+ .container .hexagon::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 80%;
+    height: 80px;
+    background: radial-gradient(rgba(219, 217, 217, 0.16),transparent,transparent);
+    border-radius: 50%;
+    transition: .5s;
+}
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform: scale(.8);
+}
+.container .hexagon .hexagon-shape{
+    padding: 1rem;
+    background: #000;
+    clip-path: polygon(0 25% , 50% 0, 100% 25%, 100% 75% , 50% 100%, 0 75%);
+    transition: .5s;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+ .container .hexagon:hover:hover .hexagon-shape{
+    transform: translateY(-30px);
+}
+.container .hexagon .hexagon-shape img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .hexagon .hexagon-shape .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#097969,rgba(0, 0, 0, 0.5));
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .hexagon:hover .hexagon-shape .content{
+    opacity: 1;
+}
+.container .hexagon .hexagon-shape .content h2{
+font-size: 22px;
+}
+.container .hexagon .hexagon-shape .content p{
+    font-size: 14px;
+}
+
+/*------waterfalls section ------*/
+.Waterfalls{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../student_3/Wild/images/waterfalls.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Waterfalls.content{
+    max-width: 60rem;
+}
+.Waterfalls .content h3{
+    font-size: 9rem;
+    margin: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(../../student_3/Wild/images/back.png);
+    -webkit-background-clip: text;
+}
+.Waterfalls .content p{
+    padding: 0 8%;
+    font-family:'Roboto',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+/*------safari section ------*/
+.Safari{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../student_3/Wild/images/safari.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Safari .content{
+    max-width: 60rem;
+
+}
+.Safari .content h3{
+    font-size: 9rem;
+    margin: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(../../student_3/Wild/images/back.png);
+    -webkit-background-clip: text;
+}
+.Safari .content p{
+    padding: 0 8%;
+    font-family:'Roboto',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    background:green;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.button:hover{
+    letter-spacing: .2rem;
+    background:#50C878;
+}
+
+/*------footer ------*/
+
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(41, 77, 41);
+    color: white;
+    margin: 0;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  footer:hover {
+    background-color: rgb(96, 164, 96);
+  }
+   
+  footer p {
+    margin: 0;
+  }
+   footer a{
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+   }
+   footer a:hover {
+    background-color: rgb(197, 177, 89);
+    color: black;
+    cursor: pointer;
+  }
+  
