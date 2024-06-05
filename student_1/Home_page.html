@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../student_2/logo.jpeg" type="image/x-icon">
+        <title>Travel Website</title>
+        <link rel="stylesheet" href="../student_2/main.css">
+        <link rel="stylesheet" href="../student_2/home.css">
+
+    </head>
+
+
+    <body>
+
+        <section class="header">
+            <nav>
+                <a href="../student_2/Home_page.html">
+                    <img src="../student_2/resources/logo.png " alt="Site Logo" class="ct">
+                </a>
+    
+                <ul class="nav-elements">
+                    <li style="display: inline;"><a href="../student_2/Home_page.html">Home</a></li>
+                    <li style="display: inline;"><a href="../student_3/Quiz/Tourism_Quiz.html">Quiz</a></li>
+                    <li style="display: inline;"><a href="../student_2/comment_form.html">Comment</a></li>
+                    <li style="display: inline;"><a href="../student_1/addToCart/addToCart.html">Products</a></li>
+                    <li style="display: inline;"><a href="../student_4/SVG.html">Sitemap</a></li>
+                    <li style="display: inline;"><a href="../student_3/Student Details/Details.html">About us</a></li>
+                        
+                </ul>
+            </nav>
+        </section>
+
+            <img src="" id="image" class="navimg">
+                
+                <script type="text/javascript">
+
+                    let image=document.getElementById("image");
+                    let images=["../student_2/resources/home_page/home1.jpg","../student_2/resources/home_page/home2.jpg","../student_2/resources/home_page/home3.jpg","../student_2/resources/home_page/home4.jpg"]
+                    setInterval(function(){
+                        let random=Math.floor(Math.random()*4);
+                        image.src=images[random];
+                    },800);
+
+                </script>
+            
+                <div class="text-box">
+                    <h1>MAKE YOUR TOUR AMAZING WITH US</h1>
+                    <br>
+                    <h5> SL TROUVAILLE</h5>
+                </div>
+            
+            </img>
+
+        
+
+        
+
+        <section >
+            <br>
+            <div class="topic" id="first">
+                <h1 >Most Popular Trips</h1>
+            </div>
+                
+            <div class="cards">
+
+                <div class="card">
+                    <img src="../student_2/resources/trips/beach.png" alt="Beach" class="trip-img">
+                    <a href="../student_2/beaches.html" class="button">Beach</a>
+                </div>
+
+                <div class="card">
+                    <img src="../student_2/resources/trips/hotel.jpg" alt="Hotels" class="trip-img">
+                     <a href=""class="button">Hotels</a>
+                </div>
+                
+                <div class="card">
+                    <img src="../student_2/resources/trips/hike.jpg" alt="hike" class="trip-img">
+                    <a href=""class="button">Hiking</a>
+                </div>
+
+                <div class="card">
+                    <img src="../student_2/resources/trips/waterfall.png" alt="waterfall " class="trip-img">
+                    <a href=""class="button">Forest</a>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <section >
+            <br>
+            <div class="comment-form">
+                <h1 id="third">Send Your comments to us</h1>
+                <br>
+                    <p>We want your valubale comments for develop our website.Take your time and give us your comments and rate our service</p>
+                      <br><br>
+                    <div class="comment-link">
+                          <a href="../student_2/comment_form.html">Comment form</a>
+                      </div>
+            </div>
+            
+        </section>
+
+        <section>
+                <footer>
+
+                    <p>Copyright © SL TERVOULIIA 2023</p>
+                    &nbsp;&nbsp;<a href="../student_2/editor-Nathasha.html">Editor-Nathasha</a>
+                    
+                </footer>
+        </section>
+
+       
+    </body>
+
+</html>

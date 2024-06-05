@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <!-- link to css code -->
+    <link rel="stylesheet" href="../../student_2/main.css">
+    <link rel="stylesheet" href="./addToCart.css">
+    <!-- link to header and footer css  -->
+    <link rel="stylesheet" href="./Header&Footer/headerandfooterstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./addToCart.js" async></script>
+    <title>product</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../student_2/logo.jpeg" type="image/x-icon">
+<!-- navigation bar -->
+</head>
+<body>
+    <header>
+        
+        <section class="header">
+            <nav>
+                <a href="../../student_2/Home_page.html">
+                    <img src="../../student_2/logo.jpeg" alt="Site Logo" class="ct">
+                </a>
+    
+                <ul class="nav-elements">
+                    <li style="display: inline;"><a href="../../student_2/Home_page.html">Home</a></li>
+                    <li style="display: inline;"><a href="../../student_3/Quiz/Tourism_Quiz.html">Quiz</a></li>
+                    <li style="display: inline;"><a href="../../student_2/comment_form.html">Comment</a></li>
+                    <li style="display: inline;"><a href="../addToCart/addToCart.html">Products</a></li>
+                    <li style="display: inline;"><a href="../../student_4/SVG.html">Sitemap</a></li>
+                    <li style="display: inline;"><a href="../../student_3/Student Details/Details.html">About us</a></li>
+                        
+                </ul>
+            </nav>
+        </section>
+                 
+    </header>
+
+    <div class="headerTitle">
+        <h1> PRODUCT</h1>
+    </div>
+
+    <!-- shop-item-details -->
+    <section class="containerS content-section">
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Bamboo Laundry basket</span>
+                <img class="shop-item-image" src="../img/product3.jpg" alt="Laundry basket">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$30.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Bamboo Bag</span>
+                <img class="shop-item-image" src="../img/product2.jpg" alt="Bag">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$25.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Diamond Rattan Round Placemat</span>
+                <img class="shop-item-image" src="../img/product1.jpg" alt="Placemat">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$20.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wooden Earing</span>
+                <img class="shop-item-image" src="../img/earring.jpg" alt="Earing">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$15.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Wooden Necklace 001</span>
+                <img class="shop-item-image" src="../img/necklace1.jpg" alt="Necklace1">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$15.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wooden Necklace 002</span>
+                <img class="shop-item-image" src="../img/necklace2.jpg" alt=" Necklace2">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$20.00</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+            <section class="containerS content-section">
+                <h2 class="section-header">YOUR CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEMS</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+
+            <h3 style="color: white;">Please fill your details</h3>
+            <div>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+
+            <label for="cnumber">Credit/Debit cart number</label>
+            <input type="number" id="cnumber" name="cnumber" placeholder="Your card number.. ">
+
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" name="phonenumber">
+
+            <label for="emial">Email</label>
+            <input type="text" id="email" name="Email" placeholder="xxxxxxxxx@gmail.com">
+
+            <label for="adress">Adress</label>
+            <input type="text" id="adress" name="adress">
+            
+            <button class="btn btn-primary btn-purchase" type="submit" value="submit">PURCHASE</button>
+        
+        </section>
+
+        <!-- footer -->
+            
+        <section>
+            <footer>
+                <p>Copyright © SL TERVOULIIA 2023</p>
+                &nbsp;&nbsp;<a href="../student_2/editor-Nathasha.html">Editor-Sithmi</a>
+            </footer>
+        </section>
+    
+</body>
+</html>

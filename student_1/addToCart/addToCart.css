@@ -1,0 +1,260 @@
+body {
+    background: #1c1c1c;
+}
+
+.headerTitle {
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headerTitle h1 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 100px;
+    left: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.containerS {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10.72px 10.72px;
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    background-color: rgba(218, 19, 19, 0.3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 64px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgb(65, 122, 167);
+    border-color: white;
+    border-radius: 4.8px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.561);
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+    font-size: 24px;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 24px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    color: white;
+}
+
+.cart-item {
+    width: 45%;
+    color: white;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 19.2px;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+    color: white;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: 8px;
+    font-size: 19.2px;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: 4.8px;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 19.2px;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    color: white;
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 17.6px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 28px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+img {
+    max-width: 150%;
+    max-height: 150%;
+    margin-left: 15px;
+}
+
+h1 {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.Editor {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: white;
+}

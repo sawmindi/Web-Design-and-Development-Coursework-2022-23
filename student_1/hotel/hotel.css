@@ -1,0 +1,237 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body,html{
+    overflow-x: hidden;
+    background: #000000;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent ;
+}
+html::-webkit-scrollbar-thumb{
+    background:whitesmoke;
+}
+/*------navigation bar ------*/
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+    height: 110px;
+    background-color: black;
+}
+.nav img{
+    display: center;
+    margin:0 auto;
+    transition: 15px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+nav img {
+    max-width: 110px;
+    min-height: 110px;
+    object-fit: cover;
+}
+nav img:hover {
+    filter: hue-rotate(30deg);
+}
+.nav-elements {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-elements a {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+.nav-elements a:hover {
+    background-color: rgb(24, 117, 24);
+    color: white;
+    cursor: pointer;
+}
+.nav-elements li {
+    display: flex;
+    align-items: center;
+}
+.nav-elements li div {
+    margin-left: 2rem;
+} 
+
+/*------Hotel section------*/
+.Hotel{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../student_1/img/Hotel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Hotel.content{
+    max-width: 60rem;
+}
+.Hotel .content h3{
+    font-size: 9rem;
+    margin: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(../../student_3/Wild/images/back.png);
+    -webkit-background-clip: text;
+}
+.Hotel .content p{
+    padding: 0 8%;
+    font-family:'Roboto',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+ }
+ .container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .Card{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 50px 20px 70px;
+}
+ .container .Card::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 80%;
+    height: 80px;
+    background: radial-gradient(rgba(219, 217, 217, 0.16),transparent,transparent);
+    border-radius: 50%;
+    transition: .5s;
+}
+.container .Card:hover::before{
+    opacity: 0.8;
+    transform: scale(.8);
+}
+.container .Card .shape{
+    padding: 1rem;
+    background: #000;
+    transition: .5s;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+ .container .Card:hover:hover .shape{
+    transform: translateY(-30px);
+}
+.container .Card .shape img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .Card .shape .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#097969,rgba(0, 0, 0, 0.5));
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .Card:hover .shape .content{
+    opacity: 1;
+}
+.container .Card .shape .content h2{
+font-size: 22px;
+}
+.container .Card .shape .content p{
+    font-size: 14px;
+}
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    background:green;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.button:hover{
+    letter-spacing: .2rem;
+    background:#50C878;
+}
+
+/*------footer ------*/
+
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(41, 77, 41);
+    color: white;
+    margin: 0;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  footer:hover {
+    background-color: rgb(96, 164, 96);
+  }
+   
+  footer p {
+    margin: 0;
+  }
+   footer a{
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+   }
+   footer a:hover {
+    background-color: rgb(197, 177, 89);
+    color: black;
+    cursor: pointer;
+  }
+  
